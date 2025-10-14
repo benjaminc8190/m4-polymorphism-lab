@@ -50,9 +50,12 @@ public class Person{
     public boolean getAlive(){
         return this.alive;
     }
+    public int getPaid(){
+        return 0;
+    }
 
     public String toString(){
-        String s="Name: "+ this.name + "\n";
+        String s=this.name + "\n";
         s+="Age: "+ this.age + "\n";
         s+="SSN: "+ this.ssn + "\n";
         s+="Alive: "+ this.alive + "\n";

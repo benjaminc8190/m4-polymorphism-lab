@@ -12,4 +12,24 @@ public class Student_Worker extends Person{
     private int salary;
     private int num_vacation;
     private String course_taught;
+
+    public Student_Worker(String n, int a, String ssn, boolean alive){
+        super(n, a, ssn, alive);
+        salary=10000;
+        num_vacation=5;
+    }
+
+    public int getPaid(){
+        return this.salary;
+    }
+
+    public String toString(){
+        String s= "Student Worker " + super.toString();
+        s+="TA ID: "+ this.ta_id + "\n";
+        s+="Year: "+ this.year + "\n";
+        s+="Salary: "+ this.salary + "\n";
+        s+="Number of Vacation Days: "+ this.num_vacation + "\n";
+        s+="Course Taught: "+ this.course_taught + "\n";
+        return s;
+    }
 }
