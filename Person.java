@@ -1,9 +1,9 @@
 /*
  * CSCI 185 M03
  * Fall 2025
- * M3: Inheritance 101 Lab
+ * M4: Polymorphism Lab
  * Author: Benjamin Chau
- * Date: 10/1/2025
+ * Date: 10/14/2025
  */
 
 public class Person{
@@ -52,8 +52,7 @@ public class Person{
     }
 
     public String toString(){
-        String s="";
-        s+="Name: "+ this.name + "\n";
+        String s="Name: "+ this.name + "\n";
         s+="Age: "+ this.age + "\n";
         s+="SSN: "+ this.ssn + "\n";
         s+="Alive: "+ this.alive + "\n";
