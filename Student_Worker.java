@@ -19,8 +19,14 @@ public class Student_Worker extends Person{
         num_vacation=5;
     }
 
-    public int getPaid(){
-        return this.salary;
+     public void getPaid(){
+        this.salary=10000;
+        System.out.println("I get paid " + this.salary);
+    }
+
+    public void getVacation(){
+        this.num_vacation=5;
+        System.out.println("Student Worker gets " + this.num_vacation + " days of vacation.");
     }
 
     public String toString(){

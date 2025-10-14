@@ -14,12 +14,16 @@ public class Secretary extends Person{
 
     public Secretary(String n, int a, String ssn, boolean alive){
         super(n, a, ssn, alive);
-        salary=25000;
-        num_vacation=15;
     }
 
-    public int getPaid(){
-        return this.salary;
+    public void getPaid(){
+        this.salary=25000;
+        System.out.println("I get paid " + this.salary);
+    }
+
+    public void getVacation(){
+        this.num_vacation=25;
+        System.out.println("Secretary gets " + this.num_vacation + " days of vacation.");
     }
 
     public String toString(){

@@ -14,12 +14,17 @@ public class Professor extends Person{
 
     public Professor(String n, int a, String ssn, boolean alive){
         super(n, a, ssn, alive);
-        salary=50000;
         num_vacation=20;
     }
 
-    public int getPaid(){
-        return this.salary;
+    public void getPaid(){
+        this.salary+=50000;
+        System.out.println("I get paid " + this.salary + " this semester.");
+    }
+
+    public void getVacation(){
+        this.num_vacation=20;
+        System.out.println("Professor gets " + this.num_vacation + " days of vacation.");
     }
 
     public String toString(){

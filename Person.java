@@ -12,12 +12,6 @@ public class Person{
     private String ssn;
     private boolean alive;
 
-    public Person(){
-        this.name="unknown";
-        this.age=18;
-        this.ssn="unknown";
-        this.alive=false;
-    }
     public Person(String n, int a, String ssn, boolean alive){
         this.name=n;
         this.age=a;
@@ -25,33 +19,11 @@ public class Person{
         this.alive=alive;
     }
 
-    public void setName(String n){
-        this.name=n;
-    }
-    public void setAge(int a){
-        this.age=a;
-    }
-    public void setSSN(String ssn){
-        this.ssn=ssn;
-    }
-    public void setAlive(boolean alive){
-        this.alive=alive;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-    public int getAge(){
-        return this.age;
-    }
-    public String getSSN(){
-        return this.ssn;
-    }
-    public boolean getAlive(){
-        return this.alive;
-    }
-    public int getPaid(){
-        return 0;
+    public void getPaid(){
+        System.out.println("I don't get paid");
+    } 
+    public void getVacation(){
+        System.out.println("I get too many days of vacation.");
     }
 
     public String toString(){
