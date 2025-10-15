@@ -26,5 +26,11 @@ public class Run {
         System.out.println("This is professor class toString method: " + p.toString());
         System.out.println("This is secretary class toString method: " + s.toString());
         System.out.println("This is student worker class toString method: " + sw.toString());
+
+        //upcasting demonstration:
+        sw = new Person("New Charlie", 28, "444-444-4444", true);
+        System.out.println("\nUpcast Student Worker to Person:");
+        sw.getPaid(); //calls Person's getPaid method
+        sw.getVacation(); //calls Person's getVacation method
     }
 }
