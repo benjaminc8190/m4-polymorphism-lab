@@ -15,24 +15,16 @@ public class Professor extends Person{
     public Professor(String n, int a, String ssn, boolean alive){
         super(n, a, ssn, alive);
         num_vacation=20;
+        salary=50000;
     }
 
     public void getPaid(){
-        this.salary+=50000;
-        System.out.println("I get paid " + this.salary + " this semester.");
+        System.out.println("I get paid a yearly total of " + this.salary + " monthly.");
     }
 
     public void getVacation(){
         this.num_vacation=20;
-        System.out.println("Professor gets " + this.num_vacation + " days of vacation.");
+        System.out.println("Professor gets " + this.num_vacation + " days of vacation every 3 months.");
     }
-
-    public String toString(){
-        String s= "Professor " + super.toString();
-        s+="Faculty ID: "+ this.fac_id + "\n";
-        s+="Research Area: "+ this.research_area + "\n";
-        s+="Salary: "+ this.salary + "\n";
-        s+="Number of Vacation Days: "+ this.num_vacation + "\n";
-        return s;
-    }
+    //intentionally left out toString method to demonstrate inheritance of Person's toString method
 }

@@ -14,24 +14,17 @@ public class Secretary extends Person{
 
     public Secretary(String n, int a, String ssn, boolean alive){
         super(n, a, ssn, alive);
+        this.salary=25000;
+        this.num_vacation=25;
     }
 
     public void getPaid(){
-        this.salary=25000;
-        System.out.println("I get paid " + this.salary);
+        System.out.println("I get paid a yearly total of " + this.salary + " bi-weekly.");
     }
 
     public void getVacation(){
-        this.num_vacation=25;
-        System.out.println("Secretary gets " + this.num_vacation + " days of vacation.");
+        System.out.println("Secretary gets " + this.num_vacation + " days of vacation every month.");
     }
 
-    public String toString(){
-        String s= "Secretary " + super.toString();
-        s+="Faculty ID: "+ this.fac_id + "\n";
-        s+="Number of Years of Service: "+ this.num_service + "\n";
-        s+="Salary: "+ this.salary + "\n";
-        s+="Number of Vacation Days: "+ this.num_vacation + "\n";
-        return s;
-    }
+    //intentionally left out toString method to demonstrate inheritance of Person's toString method
 }

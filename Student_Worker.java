@@ -15,22 +15,25 @@ public class Student_Worker extends Person{
 
     public Student_Worker(String n, int a, String ssn, boolean alive){
         super(n, a, ssn, alive);
-        salary=10000;
-        num_vacation=5;
+        this.ta_id="T12345";
+        this.year="Sophomore"; 
+        this.course_taught="CSCI 185";
+        this.num_vacation=8;
+        salary=1000;
     }
 
      public void getPaid(){
-        this.salary=10000;
-        System.out.println("I get paid " + this.salary);
+        System.out.println("I get paid " + this.salary + " hourly");
     }
 
     public void getVacation(){
-        this.num_vacation=5;
-        System.out.println("Student Worker gets " + this.num_vacation + " days of vacation.");
+        System.out.println("Student Worker gets vacation every weekend.");
     }
 
+    //demonstrate overriding toString method
+    @Override
     public String toString(){
-        String s= "Student Worker " + super.toString();
+        String s= "Student Worker ";
         s+="TA ID: "+ this.ta_id + "\n";
         s+="Year: "+ this.year + "\n";
         s+="Salary: "+ this.salary + "\n";

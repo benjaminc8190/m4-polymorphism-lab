@@ -27,11 +27,7 @@ public class Person{
     }
 
     public String toString(){
-        String s=this.name + "\n";
-        s+="Age: "+ this.age + "\n";
-        s+="SSN: "+ this.ssn + "\n";
-        s+="Alive: "+ this.alive + "\n";
-        return s;
+        return "This is a Person";
     }
 
 }
